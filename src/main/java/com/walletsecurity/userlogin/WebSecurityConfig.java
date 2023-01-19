@@ -95,3 +95,16 @@
 //        return http.build();
 //    }
 //}
+
+//			return http
+//					.csrf().disable()
+//					.authorizeHttpRequests(authorizeConfig -> {
+//						authorizeConfig.requestMatchers("/").authenticated();
+//						authorizeConfig.anyRequest().permitAll();
+//					})
+//					.addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter.class)
+//					.build();
+
+
+//                .authorizeHttpRequests().requestMatchers("/hello").authenticated()
+//                .requestMatchers("/login").permitAll()
